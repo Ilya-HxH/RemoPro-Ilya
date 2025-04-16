@@ -57,19 +57,17 @@ const CustomTabBar = ({ state, descriptors, navigation }) => {
 
 export default function ClientTabsNavigator() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator
-        screenOptions={{
-          headerShown: false,
-        }}
-        tabBar={(props) => <CustomTabBar {...props} />}
-      >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Projects" component={ProjectsScreen} />
-        <Tab.Screen name="Teams" component={TeamsScreen} />
-        <Tab.Screen name="Chat" component={ChatScreen} />
-      </Tab.Navigator>
-    </NavigationContainer>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+      tabBar={(props) => <CustomTabBar {...props} />}
+    >
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Projects" component={ProjectsScreen} />
+      <Tab.Screen name="Teams" component={TeamsScreen} />
+      <Tab.Screen name="Chat" component={ChatScreen} />
+    </Tab.Navigator>
   );
 }
 

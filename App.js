@@ -1,8 +1,12 @@
 import React from 'react';
 import './global.css';
-import { Text, View } from 'react-native';
-import ClientTabsNavigator from './navigation/ClientTabsNavigator';
+import AppNavigator from './navigation/AppNavigator';
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
-  return <ClientTabsNavigator />;
+  return (
+    <NavigationContainer>
+      <AppNavigator />
+    </NavigationContainer>
+  );
 }
