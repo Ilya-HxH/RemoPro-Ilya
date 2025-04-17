@@ -9,6 +9,8 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Logo from "../../assets/logo.svg";
+import NoticeIcon from "../../assets/Notice-icon.svg";
+import ProfileIcon from "../../assets/Profile-icon.svg";
 import { myProjects, teams } from "../../mock/mockData";
 import { useNavigation } from '@react-navigation/native';
 
@@ -42,13 +44,15 @@ export default function HomeScreen() {
               <Logo width={130} height={20} />
             </View>
             <View className="flex-row space-x-2">
-              <TouchableOpacity className="p-1">
-                <Ionicons name="notifications-outline" size={36} />
-              </TouchableOpacity>
-              <TouchableOpacity className="p-1">
-                <Ionicons name="person-circle-outline" size={36} />
-              </TouchableOpacity>
+            <TouchableOpacity className="p-1">
+              <NoticeIcon width={36} height={36} />
+            </TouchableOpacity>
+            <TouchableOpacity className="p-1">
+              <ProfileIcon width={36} height={36} />
+            </TouchableOpacity>
+
             </View>
+
           </View>
         </View>
 

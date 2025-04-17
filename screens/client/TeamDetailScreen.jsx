@@ -15,6 +15,9 @@ import { useRoute, useNavigation } from "@react-navigation/native";
 import { teamDetails } from "../../mock/teamDetailMockData";
 import ImageView from "react-native-image-viewing";
 import { Image as RNImage } from "react-native";
+import ArrowIcon from "../../assets/Arrow-icon.svg";
+
+
 
 const { width } = Dimensions.get("window");
 const imageHeight = width * 0.75;
@@ -93,7 +96,7 @@ export default function TeamDetailScreen() {
 
           <View className="absolute top-20 left-4 right-4 flex-row justify-between items-center">
             <TouchableOpacity onPress={() => navigation.goBack()}>
-              <Ionicons name="arrow-back" size={36} color="white" />
+              <ArrowIcon name="arrow-back" size={36} color="white" />
             </TouchableOpacity>
             <TouchableOpacity>
               <Ionicons name="heart-outline" size={36} color="white" />

@@ -12,6 +12,10 @@ import { teams } from "../../mock/mockData";
 import { useState } from "react";
 import { Modal, Pressable } from "react-native";
 import FilterHeader from "../../components/TeamsFilter";
+import NoticeIcon from "../../assets/Notice-icon.svg";
+import ProfileIcon from "../../assets/Profile-icon.svg";
+import ArrowIcon from "../../assets/Arrow-icon.svg";
+
 
 export default function TeamsScreen() {
 
@@ -28,7 +32,7 @@ export default function TeamsScreen() {
       <View className="bg-yellow-300 px-4 pt-20 pb-4 rounded-b-3xl">
         <View className="flex-row items-center justify-between mb-2">
           <TouchableOpacity className="p-1">
-            <Ionicons name="arrow-back" size={36} />
+            <ArrowIcon name="arrow-back" size={36} />
           </TouchableOpacity>
 
           <View className="flex-1 mx-2 border border-black h-[36px] rounded-[12px] px-3 py-1 flex-row items-center">
@@ -39,14 +43,14 @@ export default function TeamsScreen() {
             />
           </View>
 
-         <View className="flex-row space-x-2">
-                   <TouchableOpacity className="p-1">
-                     <Ionicons name="notifications-outline" size={36} />
-                   </TouchableOpacity>
-                   <TouchableOpacity className="p-1">
-                     <Ionicons name="person-circle-outline" size={36} />
-                   </TouchableOpacity>
-                 </View> 
+          <View className="flex-row space-x-3">
+          <TouchableOpacity>
+            <NoticeIcon width={36} height={36} />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <ProfileIcon width={36} height={36} />
+          </TouchableOpacity>
+        </View>
         </View>
       </View>
       <View className="mb-4 mt-2" >
